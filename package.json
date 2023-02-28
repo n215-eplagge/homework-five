@@ -1,0 +1,22 @@
+{
+  "name": "homework-five",
+  "version": "1.0.0",
+  "description": "This is a repo containing Assignment homework five.",
+  "main": "index.js",
+  "scripts": {
+    "compile:sass": "sass scss/styles.scss css/styles.css -w"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/n215-eplagge/homework-five.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/n215-eplagge/homework-five/issues"
+  },
+  "homepage": "https://github.com/n215-eplagge/homework-five#readme",
+  "devDependencies": {
+    "sass": "^1.58.3"
+  }
+}
