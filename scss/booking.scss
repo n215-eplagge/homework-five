@@ -17,9 +17,9 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 975px) {
   .booking-wrapper {
-    width: 100%;
+    max-width: 100%;
     .tour-wrapper {
       flex-wrap: wrap;
       flex-direction: column;

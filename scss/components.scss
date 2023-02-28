@@ -47,15 +47,10 @@
     url(../images/tour3.jpg);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 975px) {
   .tour-component {
     margin-bottom: 20px;
     height: 304px;
     font-size: 120%;
-  }
-}
-
-@media (max-width: 1000px) and (min-width: 900px) {
-  .tour-component {
   }
 }

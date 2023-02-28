@@ -1,3 +1,19 @@
+@font-face {
+  font-family: Nova;
+  src: url(../css/fonts/ProximaNovaScOsfExtraCondensed.ttf);
+}
+@font-face {
+  font-family: RegularSans;
+  src: url(../css/fonts/Gill\ Sans\ Medium.otf);
+}
+@font-face {
+  font-family: LightSans;
+  src: url(../css/fonts/Gill\ Sans\ Light.otf);
+}
+@font-face {
+  font-family: ItalicSans;
+  src: url(../css/fonts/Gill\ Sans\ Italic.otf);
+}
 .tour-component {
   width: 236px;
   height: 304px;
@@ -45,7 +61,7 @@
   background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(0, 0, 0, 0.6)), url(../images/tour3.jpg);
 }
 
-@media (max-width: 860px) {
+@media (max-width: 975px) {
   .tour-component {
     margin-bottom: 20px;
     height: 304px;
@@ -134,7 +150,7 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  border-bottom: 2px solid #79addc;
+  border-bottom: 2px solid #ffffff;
 }
 nav .logo {
   height: 42px;
@@ -155,6 +171,33 @@ nav a {
 }
 nav .last {
   border-right: 0px solid #ffffff;
+}
+
+.test {
+  margin: 0 auto;
+  width: 100%;
+  height: 90px;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  border-bottom: 2px solid black;
+}
+.test a {
+  text-decoration: none;
+  font-family: RegularSans;
+  color: black;
+  margin-left: 19px;
+  padding-right: 19px;
+  border-right: 2px solid #79addc;
+  font-size: 15px;
+}
+.test .logo {
+  height: 42px;
+  width: 92px;
+  background-image: url(../images/logo-black.png);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media (max-width: 860px) {
@@ -182,9 +225,9 @@ nav .last {
   font-size: 80px;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 975px) {
   .booking-wrapper {
-    width: 100%;
+    max-width: 100%;
   }
   .booking-wrapper .tour-wrapper {
     flex-wrap: wrap;
@@ -217,7 +260,7 @@ nav .last {
 }
 
 .one-form {
-  width: 100%;
+  max-width: 100%;
   height: 58px;
   display: flex;
   justify-content: space-between;
@@ -226,10 +269,11 @@ nav .last {
 }
 .one-form .form-container {
   position: relative;
+  width: 75%;
 }
 .one-form .form-container .one-long {
   height: 100%;
-  width: 720px;
+  width: 100%;
   padding-left: 10px;
   border: 1px solid;
   border-color: #79addc;
@@ -303,10 +347,8 @@ nav .last {
   font-family: RegularSans;
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1093px) {
   .two-form {
-    height: 25px;
-    width: 80%;
     margin-left: 10px;
   }
   .two-form .short-half {
@@ -315,77 +357,102 @@ nav .last {
 }
 @media (max-width: 860px) {
   .one-form {
-    height: 25px;
-    width: 95%;
+    min-width: 95%;
     margin-left: 10px;
   }
   .one-form .form-container .one-long {
     width: 100%;
   }
-  .one-form .form-container .fa-calendar-days {
-    top: 5px;
-    font-size: 12px;
-  }
 }
 @media (max-width: 860px) {
   .drop-forms {
     width: 95%;
-    height: 25px;
     margin-left: 10px;
   }
   .drop-forms .drop-wrapper .drop-box {
-    height: 25px;
     width: 40%;
     margin-right: 10px;
   }
   .drop-forms .drop-wrapper .drop-box .drop-down {
     padding-left: 4px;
   }
-  .drop-forms .drop-wrapper .drop-box .fa-caret-down {
-    top: 2px;
-    right: 5px;
-    font-size: 20px;
-  }
 }
-.about {
-  margin-top: 110px;
-  margin-bottom: 180px;
+.about-wrapper {
+  min-height: 850px;
+  max-width: 980px;
+  margin: 90px auto;
 }
-.about .about-header h1 {
-  margin-bottom: 2px;
+.about-wrapper .title-wrapper {
+  margin-left: 20px;
+  margin-bottom: 95px;
 }
-.about .about-header .border-bottom {
-  width: 97px;
-  height: 2px;
-  background-color: #000;
-  margin-bottom: 16px;
+.about-wrapper .title-wrapper h1 {
+  font-family: Nova;
+  font-size: 80px;
+  width: 125px;
+  border-bottom: 2px solid black;
+  margin-bottom: 32px;
 }
-.about .about-client-quotes {
-  margin-top: 107px;
+.about-wrapper .title-wrapper p {
+  font-family: RegularSans;
+  font-size: 16px;
 }
-.about .about-client-quotes .client-box {
+.about-wrapper .client-wrapper {
+  margin-left: 20px;
   max-width: 722px;
+  min-height: 429px;
+}
+.about-wrapper .client-wrapper .quote-container {
+  width: 100%;
+  height: 150px;
   display: flex;
-  position: relative;
+  justify-content: space-between;
+  align-items: center;
   margin-bottom: 37px;
 }
-.about .about-client-quotes .client-box .client-image {
-  width: 260px;
-  height: 150px;
-  overflow: hidden;
-  margin-right: 21px;
+.about-wrapper .client-wrapper .quote-container .picture {
+  height: 100%;
+  width: 35%;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
-.about .about-client-quotes .client-box .client-image img {
-  width: 100%;
+.about-wrapper .client-wrapper .quote-container .quote {
+  margin-left: 20px;
+  height: 100%;
+  width: 65%;
+  position: relative;
 }
-.about .about-client-quotes .client-box .client-quote {
-  max-width: 440px;
-  margin-bottom: 20px;
+.about-wrapper .client-wrapper .quote-container .quote p {
+  font-family: ItalicSans;
+  font-size: 18px;
+  line-height: 19px;
 }
-.about .about-client-quotes .client-box .client-name {
+.about-wrapper .client-wrapper .quote-container .quote .speaker {
   position: absolute;
-  bottom: 0;
-  right: 0;
+  right: 70px;
+  width: 100px;
+}
+.about-wrapper .client-wrapper .quote-container .quote .speaker h1 {
+  color: #79addc;
+  right: 20px;
+  font-size: 30px;
+  border-bottom: 0px;
+}
+.about-wrapper .client-wrapper h1 {
+  font-family: Nova;
+  font-size: 60px;
+  width: 300px;
+  border-bottom: 2px solid black;
+  margin-bottom: 32px;
+}
+
+.lady {
+  background-image: url(../images/about-client-01.jpg);
+}
+
+.man {
+  background-image: url(../images/about-client-02.jpg);
 }
 
 footer {

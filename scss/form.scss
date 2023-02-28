@@ -22,7 +22,7 @@
   }
 }
 .one-form {
-  width: 100%;
+  max-width: 100%;
   height: 58px;
   display: flex;
   justify-content: space-between;
@@ -30,9 +30,10 @@
   margin-bottom: 20px;
   .form-container {
     position: relative;
+    width: 75%;
     .one-long {
       height: 100%;
-      width: 720px;
+      width: 100%;
       padding-left: 10px;
       border: 1px solid;
       border-color: $site-blue;
@@ -107,10 +108,8 @@
   }
 }
 
-@media (max-width: 860px) {
+@media (max-width: 1093px) {
   .two-form {
-    height: 25px;
-    width: 80%;
     margin-left: 10px;
     .short-half {
       margin-right: 10px;
@@ -120,16 +119,11 @@
 
 @media (max-width: 860px) {
   .one-form {
-    height: 25px;
-    width: 95%;
+    min-width: 95%;
     margin-left: 10px;
     .form-container {
       .one-long {
         width: 100%;
-      }
-      .fa-calendar-days {
-        top: 5px;
-        font-size: 12px;
       }
     }
   }
@@ -138,20 +132,13 @@
 @media (max-width: 860px) {
   .drop-forms {
     width: 95%;
-    height: 25px;
     margin-left: 10px;
     .drop-wrapper {
       .drop-box {
-        height: 25px;
         width: 40%;
         margin-right: 10px;
         .drop-down {
           padding-left: 4px;
-        }
-        .fa-caret-down {
-          top: 2px;
-          right: 5px;
-          font-size: 20px;
         }
       }
     }
